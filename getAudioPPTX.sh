@@ -79,7 +79,7 @@ retainFolder="audio"
 filesTEMP="allfiles.txt"
 ls > $filesTEMP
 
-echo "Start process to remove unnecessary files ..."
+echo "Starting process to remove unnecessary files ..."
 for item in $(cat $filesTEMP)
 do
     if [[ -d $item && $item == $retainFolder ]]; then 
@@ -97,5 +97,5 @@ done
 
 echo 
 echo "Successfully extracted audio from desired .pptx folder!!"
-echo "Enjoy .pptx audio with the .pptx pain ever again :D"
+echo "Enjoy .pptx audio without the .pptx pain ever again :D"
 exit 0
